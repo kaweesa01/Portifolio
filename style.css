@@ -1,0 +1,238 @@
+ * {
+     font-family: sans-serif;
+     margin: 0px;
+     padding: 0px;
+ }
+
+ #navbar {
+     width: 100%;
+     height: 80px;
+     background-color: tomato;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     align-items: center;
+     position: fixed;
+     z-index: 3;
+     left: 0px;
+     right: 0px;
+     top: 0px;
+ }
+
+ .list-container {
+     list-style: none;
+     display: flex;
+ }
+ #contact-navbar{
+     margin-top: 20px;
+ }
+.contact-list-container{
+    list-style: none;
+    display: flex;
+}
+ .nav-link {
+     text-decoration: none;
+     color: white;
+     font-size: 1.5rem;
+     padding: 0px 25px 0px 0px;
+ }
+.contact-nav-link{
+    text-decoration: none;
+     color: white;
+     font-size: 1.5rem;
+     padding: 0px 25px 0px 0px;
+}
+.list-item:hover{
+   transform: translateY(8px);
+   transition: transform 0.3s ease-in;
+}
+.contact-nav-link:hover{
+    color: tomato;
+}
+ #welcome-section {
+     background-color: rgb(12, 5, 17);
+     height: 100vh;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #welcome-msg {
+     font-size: 4.5rem;
+     color: white;
+ }
+
+ #profession {
+     color: tomato;
+     font-size: 2.5rem;
+ }
+
+ #projects {
+     background-color: teal;
+     height: 1100px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #about-msg {
+     font-size: 3.5rem;
+     color: white;
+     width: 850px;
+     border-bottom: 2px solid white;
+     width: 100%;
+     text-align: center;
+ }
+
+ .project-tile {
+     width: 90%;
+     height: 400px;
+     background-color: rgb(57, 61, 65);
+     margin-top: 40px;
+
+ }
+
+ .project-conatiner {
+     display: grid;
+     grid-template-columns: repeat(3, 30%);
+     justify-content: center;
+     align-items: center;
+     grid-gap: 20px;
+ }
+@media(max-width:800px){
+    .project-conatiner {     
+        grid-template-columns: repeat(2, 30%);
+     
+    }
+
+    #projects {
+       
+        height: 1580px;
+        width: 100%;
+       
+    }
+   
+}
+
+@media(max-width:700px){
+    .project-conatiner {     
+        grid-template-columns: repeat(1, 90%);
+     
+    }
+
+    #projects {
+       
+        height: 2980px;
+        width: 100%;
+       
+    }
+
+    .pics {
+        width: 100%;
+        height: 80%;
+    }
+   
+   
+}
+ .pics {
+     width: 100%;
+     height: 80%;
+ }
+
+ .title {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 20%;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ .title-text {
+     color: white;
+     position: relative;
+     text-align: center;
+     z-index: 1;
+ }
+
+ .title-text::before {
+     content: "<";
+     color: rgb(57, 61, 65);
+     position: relative;
+     left: -2px;
+     z-index: 1;
+ }
+
+ .title-text::after {
+     content: "/>";
+     color: rgb(57, 61, 65);
+     position: relative;
+     right: -2px;
+     z-index: 1;
+ }
+
+ .links:hover .title-text::before {
+     color: rgb(221, 70, 0);
+     transition: 1s;
+ }
+
+ .links:hover .title-text::after {
+     color: rgb(221, 70, 0);
+     transition: 1s;
+ }
+
+ button {
+     margin-top: 20px;
+     padding: 10px 20px 10px 20px;
+     font-size: 1rem;
+     font-family: inherit;
+     border: none;
+     background-color: rgb(57, 61, 65);
+     color: white;
+ }
+
+ button:hover {
+     background-color: brown;
+     transition: 1s;
+ }
+
+ #contacts{
+     width: 100%;
+     height: 500px;
+     background-color: rgb(57, 61, 65);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ .coffe{
+     color: white;
+     font-size: 1.5rem;
+ }
+ .work{
+    font-size: 3.5rem;
+    color: white;
+ }
+ hr{
+     width: 99%;
+     height: 5px;
+     background-color: tomato;
+     margin-top: 50px;
+ }
+ .copy-right{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 20px;
+ }
+
+ .right{
+     margin-right: 20px;
+ }
